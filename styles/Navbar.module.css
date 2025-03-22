@@ -1,0 +1,15 @@
+.navbar{
+     display: flex;
+     justify-content: space-between;
+     padding: 10px 7%;
+}
+.navbar_right{
+    display: flex;
+}
+
+.navbar_right > p{
+    margin-right: 15px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 500;
+}
