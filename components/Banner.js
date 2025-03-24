@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
 
 const Banner = () =>{
-    const [product,setproduct] = useState()
+    const [product,setproduct] = useState([])
 
     const getAllproduct =()=>{
         fetch('https://dummyjson.com/products')
         .then((res) => res.json())
-        .then((res)=>console.log(res))
+        .then((res)=>setproduct(res.products))
         .catch(error => console.log(error)
         )
     }
@@ -14,8 +14,21 @@ const Banner = () =>{
    useEffect(() =>{
     getAllproduct()
    },[])
+//    console.log(product);
+   
     return(
-        <p>Banner</p>
+        <div>
+           {product.map((p)=>(
+            <>
+            <img src={p.thumbnail} alt={p.name} />
+            <h3>{p.title}</h3>
+            <p>{p.name}</p>
+            <p>ID: {p.id}</p>
+          </>
+           ))}
+        </div>
+        
+
     )
 }
 
