@@ -1,6 +1,7 @@
 
 import Banner from '@/components/Banner'
 import Navbar from '@/components/Navbar'
+import Topproducts from '@/components/Topproduct'
 import React from 'react'
 
 const HomePage = () =>{
@@ -8,6 +9,7 @@ const HomePage = () =>{
         <div>
             <Navbar/>
             <Banner/>
+            <Topproducts/>
         </div>
     )
 }
