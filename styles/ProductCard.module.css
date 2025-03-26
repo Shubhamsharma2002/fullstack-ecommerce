@@ -1,17 +1,40 @@
+/* css for top product section */
+.top_product{
+    padding: 60px 7%;
+}
+.top_product_title{
+    font-size: 26px;
+    text-align: center;
+    font-weight: 700;
+}
+.top_product_card{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.veiw_all{
+    display: flex;
+    justify-content: end;
+    cursor: pointer;
+    margin-right: 5%;
+}
+
+/* css for card of product */
 .product_card{
     width: 250px;
     border: 1px solid lightskyblue;
     border-radius: 12px;
-   
-    margin: 10px 0px 5px 10px;
+    margin: 20px;
+    min-height: 300px;
 }
 .product_card_details{
-    padding: 20px 10px;
+    margin: 20px 10px;
 }
 .product_card>img{
     width: 100%;
-    height: fit-content;
-    object-fit: cover;
+    height: 150px;
+    /* object-fit: cover; */
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
 }
