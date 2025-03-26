@@ -22,6 +22,11 @@
     font-size: 22px;
     font-weight: 600;
 }
-.product_card_price{ 
+.product_card_price, .product_card_rating{ 
     font-size: 20px;
+}
+.product_card_footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }

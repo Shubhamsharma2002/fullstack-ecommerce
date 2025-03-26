@@ -21,8 +21,8 @@ const Topproducts = ()=>{
    return(
       <div>
         <p>Top Products</p>
-        <ProductCard id={products.id} title={products.title} brand={products.brand} price={products.price} image={products.images}/>
-        <ProductCard id={products.id} title={products.title} brand={products.brand} price={products.price} image={products.images}/>
+        <ProductCard id={products.id} title={products.title} brand={products.brand} price={products.price} image={products.images} rating={products.rating}/>
+       
       </div>
    )
 }
