@@ -28,11 +28,11 @@ const Topproducts = ()=>{
         {products?.map((p)=>(
             <ProductCard 
             id={p.id} 
-            title={p.title} 
-            brand={p.brand} 
-            price={p.price} 
-            image={p.images} 
-            rating={p.rating}
+            title={p?.title} 
+            brand={p?.brand} 
+            price={p?.price} 
+            image={p?.images} 
+            rating={p?.rating}
             />
         ))}
         
