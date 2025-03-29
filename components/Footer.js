@@ -7,7 +7,7 @@ const Footer = () =>{
                 <p>Logo</p>
             </div>
             <div>
-                
+                ALL rihht resevred
             </div>
         </div>
     )
