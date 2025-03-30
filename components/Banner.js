@@ -57,9 +57,9 @@ const Banner = () =>{
         // </div>
 
         <div className={Styles.banner}>
-            <ArrowBackIosIcon onClick={handlePreviousArrowclick} />
+            <ArrowBackIosIcon onClick={handlePreviousArrowclick}  className={Styles.banner_icon}/>
         <img className={Styles.banner_img} src={selectedproduct?.thumbnail}  />
-        <ArrowForwardIosIcon onClick={handleNextArrowclick} />
+        <ArrowForwardIosIcon onClick={handleNextArrowclick}  className={Styles.banner_icon} />
         </div>
         
 
