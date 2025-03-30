@@ -5,7 +5,7 @@ const Footer = () =>{
     return(
         <div className={Styles.footer}>
             <div>
-                <Link href="/homepage">Logo</Link>
+                <Link href="/">Logo</Link>
                 
             </div>
             <div className={Styles.footer_links}>

@@ -7,7 +7,7 @@
     display: flex;
 }
 
-.navbar_right > p{
+.navbar_right_link{
     margin-right: 15px;
     cursor: pointer;
     font-size: 20px;
