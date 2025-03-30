@@ -34,7 +34,7 @@ const Product = () =>{
                <p className={Styles.product_details_data_category}>Category:{product.category}</p>
                <p className={Styles.product_details_data_discription}>{product.description}</p>
             <div className={Styles.product_details_data_pricing}>
-                <p className={Styles.product_details_data_price}>₹{product.price}</p>
+                <p className={Styles.product_details_data_price}>₹{(product.price*90).toFixed(2)}</p>
                 <p className={Styles.product_details_data_discount}>Discount % : {product.discountPercentage}</p>
             </div>
              <div className={Styles.product_details_data_last}>
