@@ -21,3 +21,5 @@ const CartItemcard = ({id,title,description,image,category,brand,discountPercent
         </div>
     )
 }
+
+export default CartItemcard;
