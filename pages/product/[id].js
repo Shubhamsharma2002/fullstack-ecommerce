@@ -20,6 +20,25 @@ const Product = () =>{
           getdetails()
         }
     },[router.query.id])
+
+    const handdleAddtoCart = () =>{
+        const getitems = JSON.parse(sessionStorage.getItem("items")) || [];
+        console.log(getitems);
+        
+        const data = {
+            id: product.id,
+            brand:product.brand,
+            category:product.category,
+            description:product.description,
+            price:product.price,
+            discountPercentage:product.discountPercentage,
+            rating:product.rating,
+            title:product.title,
+            image:product.thumbnail
+        }
+        getitems.push(data)
+        sessionStorage.setItem("items",JSON.stringify(getitems))
+    }
     console.log("by usestate",product);
     // {product?.images?.map((img, id) => {
     //     console.log(img);  
@@ -41,7 +60,7 @@ const Product = () =>{
              <p className={Styles.product_details_data_last_iteleft}>Item Left : {product.stock}</p>
              <p className={Styles.product_details_data_last_rating}><StarIcon/>{product.rating}</p>
              </div>
-             <button className={Styles.add_to_cart}>Add to Cart</button>
+             <button onClick={handdleAddtoCart} className={Styles.add_to_cart}>Add to Cart</button>
             </div>
             <div className={Styles.images}>
                 
