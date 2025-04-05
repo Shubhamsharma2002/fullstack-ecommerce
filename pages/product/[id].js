@@ -34,7 +34,8 @@ const Product = () =>{
             discountPercentage:product.discountPercentage,
             rating:product.rating,
             title:product.title,
-            image:product.thumbnail
+            image:product.thumbnail,
+            quantity:1
         }
         getitems.push(data)
         sessionStorage.setItem("items",JSON.stringify(getitems))

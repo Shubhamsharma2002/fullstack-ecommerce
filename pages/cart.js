@@ -1,6 +1,6 @@
 import CartItemcard from "@/components/CartItemcard";
 import React, { useEffect, useState } from "react";
-
+import Styles from "../styles/Cart.module.css"
 const Cartpage = () =>{
       const [items,setItem] = useState([])
       const getItem =() =>{
@@ -14,9 +14,9 @@ const Cartpage = () =>{
       console.log(items);
       
     return(
-        <div>
-            <p>Items Are : -</p>
-            {items.map((p)=>(
+        <div className={Styles.cart}>
+            <p className={Styles.cart_title}>Items Are : -</p>
+            {items?.map((p)=>(
                 <CartItemcard 
                 id={p.id}
                 brand={p.brand}

@@ -15,8 +15,8 @@ const ProductCard = ({id,brand,price,image,title, rating}) => {
             <p className={Styles.product_card_brand}>Brand:{brand}</p>
             <p className={Styles.product_card_title}>{title}</p>
             <div className={Styles.product_card_footer}>
-            <p className={Styles.product_card_price}><CurrencyRupeeIcon/>{(price*90).toFixed(2)}</p>
-            <p className={Styles.product_card_rating}><StarIcon/>{rating}</p>
+            <p style={{ display: 'flex', alignItems: 'center', gap: '4px', color:'red'}} className={Styles.product_card_price}><CurrencyRupeeIcon/>{(price*90).toFixed(2)}</p>
+            <p style={{ display: 'flex', alignItems: 'center', gap: '4px', color:'grey'}} className={Styles.product_card_rating}><StarIcon/>{rating}</p>
             </div>
             </div>
             
